@@ -140,3 +140,6 @@ body{
     right: 20%;
     bottom: 40%;
 }
+.img{
+    z-index: -1;
+}
