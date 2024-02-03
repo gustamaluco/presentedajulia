@@ -1,0 +1,142 @@
+:root{
+    --pink-color: rgb(188, 80, 202);
+    --purple-color: rgb(116, 29, 150);
+    --color-white: #fafafa;
+    --color-white2:rgb(187, 187, 187);
+    --color-dark1: #272727;
+    --color-dark2: #2d2d2d;
+    --color-dark3: #414141;
+    --color-dark4: #1c1c1c;
+    --color-dark5: #343434;
+
+    --cute-pink1: #fcc8ff;
+    --cute-purple1: #ebbeff;
+    --cute-pink2: #ffa6fb;
+    --cute-purple2: #e3d1ff;
+    --cute-purple3: #cec6ff;
+
+    --shade-purple1: #efbbff;
+    --shade-purple2: #d896ff;
+    --shade-purple3: #be29ec;
+    --shade-purple4: #800080;
+    --shade-purple5: #660066;
+}
+
+*{
+    font-family: 'Arial';
+    margin: 0%;
+    padding: 0%;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: var(--cute-purple1);
+}
+
+.links{
+    color: var(--pink-color);
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: larger;
+    transition: .25s;
+}
+.links:hover{
+    color: var(--purple-color);
+    transition: .25s;
+}
+
+.carta{
+    padding: 5px 10px;
+    border: solid 3px var(--shade-purple3);
+    border-radius: 25px;
+}
+.carta:hover{
+    border: solid 3px var(--shade-purple4);  
+}
+
+.header, .header-nav{
+    background-color: var(--cute-pink2);
+    flex-direction: row;
+    align-items: center;
+}
+
+.header{
+    height: 3.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    word-spacing: 6em;
+    box-shadow: 0px 5px 5px var(--shade-purple2);
+}
+
+.papel{
+    display: flex;
+    background-color: var(--color-white);
+    height: 670px;
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    box-shadow: 7px 7px 3px var(--color-white2);
+}
+
+
+.texto{
+    font-family: 'Arial';
+    margin: 15px;
+    line-height: 130%;
+    font-size: 100%;
+    text-align: justify;
+}
+
+
+.kitty-reading{
+    position: absolute;
+    float: right;
+    height: 200px;
+    right: 10%;
+    top: 15%;
+}
+.melodyup{
+    position: absolute;
+    float: left;
+    height: 200px;
+    right: 10%;
+    bottom: 15%;
+}
+.lloromannic{
+    position: absolute;
+    float: left;
+    height: 160px;
+    left: 5%;
+    bottom: 15%;
+}
+.texudo{
+    position: absolute;
+    float: left;
+    height: 160px;
+    left: 10%;
+    top: 15%;
+}
+.kuromi{
+    position: absolute;
+    float: left;
+    height: 180px;
+    left: 20%;
+    bottom: 40%;
+}
+.chococat{
+    position: absolute;
+    float: right;
+    height: 170px;
+    right: 20%;
+    bottom: 40%;
+}

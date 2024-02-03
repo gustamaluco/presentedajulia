@@ -1,0 +1,120 @@
+:root{
+    --pink-color: rgb(188, 80, 202);
+    --purple-color: rgb(116, 29, 150);
+    --color-white: #fafafa;
+    --color-white2:rgb(187, 187, 187);
+    --color-dark1: #272727;
+    --color-dark2: #2d2d2d;
+    --color-dark3: #414141;
+    --color-dark4: #1c1c1c;
+    --color-dark5: #343434;
+
+    --light-pink: #ffcce2;
+    --light-pink2: #ffa7c5;
+
+    --shadow-pink: #e694e3;
+    --shadow-pink2: #cc83ca;
+    --shadow-pink3: #b77d88;
+
+    --cute-pink1: #fcc8ff;
+    --cute-purple1: #ebbeff;
+    --cute-pink2: #ffa6fb;
+    --cute-purple2: #e3d1ff;
+    --cute-purple3: #cec6ff;
+
+    --shade-purple1: #efbbff;
+    --shade-purple2: #d896ff;
+    --shade-purple3: #be29ec;
+    --shade-purple4: #800080;
+    --shade-purple5: #660066;
+}
+
+@font-face {
+    font-family: 'coolvetica';
+    src: url("../css/fonts/coolvetica\ rg.otf");
+}
+@font-face {
+    font-family: 'gravity';
+    src: url("../css/fonts/Gravity-Bold.otf");
+}
+@font-face {
+    font-family: 'mustica';
+    src: url("../css/fonts/MusticaPro-SemiBold.otf");
+}
+
+*{
+    font-family: mustica;
+    margin: 0%;
+    padding: 0%;
+    max-width: 1920px;
+    max-height: 1080;
+}
+
+body{
+    background-color: var(--cute-purple1);
+}
+html{
+    height: 100%;
+    width: 100%;
+}
+
+.links{
+    color: var(--pink-color);
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: larger;
+    transition: .25s;
+}
+.links:hover{
+    color: var(--purple-color);
+    transition: .25s;
+}
+
+.inicio{
+    padding: 5px 10px;
+    border: solid 3px var(--shade-purple3);
+    border-radius: 25px;
+}.inicio:hover{
+    border: solid 3px var(--shade-purple4);  
+}
+
+.header, .header-nav{
+    background-color: var(--cute-pink2);
+    flex-direction: row;
+    align-items: center;
+}
+
+.header{
+    height: 3.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    word-spacing: 6em;
+    margin-bottom: 30px;
+    box-shadow: 0px 5px 5px var(--shade-purple2);
+}
+
+#mensagem{
+    margin: 10px 80px;
+    padding: 10px;
+    font-size: 100%;
+    background-color: var(--cute-purple2);
+    max-width: 90%;
+    box-shadow: 0 0 8px 3px var(--shade-purple2);
+}
+
+#imagens{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4,150px);
+    grid-template-rows: repeat(2,150px);
+    grid-gap: 180px 180px;
+}
+.imagem{
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 3px var(--light-pink2);
+}
